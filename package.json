@@ -1,0 +1,42 @@
+{
+  "name": "reaktive-cli",
+  "version": "0.0.1-alpha.1",
+  "description": "A powerful CLI tool to bootstrap Reaktive projects",
+  "bin": {
+    "reaktive-cli": "bin/reaktive-cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reaktivelab/reaktive-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "reaktive-cli",
+    "reaktive"
+  ],
+  "author": {
+    "name": "Aleksandrs Bogackins",
+    "email": "a.bogackins@gmail.com",
+    "url": "https://github.com/winniepukki"
+  },
+  "license": "OSL-3.0",
+  "bugs": {
+    "url": "https://github.com/reaktivelab/reaktive-cli/issues",
+    "email": "a.bogackins@gmail.com"
+  },
+  "homepage": "https://github.com/reaktivelab/reaktive-cli#readme",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "chalk": "^4.1.1",
+    "esm": "^3.2.25",
+    "execa": "^5.1.1",
+    "inquirer": "^8.1.2",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
+  }
+}

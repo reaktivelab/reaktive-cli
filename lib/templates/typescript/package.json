@@ -1,0 +1,28 @@
+{
+    "name": "reaktive-project",
+    "version": "0.0.1",
+    "description": "",
+    "main": "src/index.tsx",
+    "scripts": {
+        "start": "",
+        "build": "",
+        "test": "",
+        "lint": ""
+    },
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "keywords": [],
+    "author": {
+        "name": "",
+        "email": "",
+        "url": ""
+    },
+    "license": "",
+    "bugs": {
+        "url": "",
+        "email": ""
+    },
+    "homepage": ""
+}
