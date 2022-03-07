@@ -4,14 +4,13 @@
     "description": "",
     "main": "src/index.js",
     "scripts": {
-        "start": "",
-        "build": "",
-        "test": "",
-        "lint": ""
-    },
-    "repository": {
-        "type": "",
-        "url": ""
+        "start": "webpack serve --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js --progress",
+        "eslint": "eslint \"**/*.js\" --ignore-pattern node_modules/",
+        "eslint:fix": "eslint \"**/*.js\" --ignore-pattern node_modules/",
+        "stylelint": "npx stylelint \"./src/app/**/**.scss\"",
+        "stylelint:fix": "npx stylelint \"./src/app/**/**.scss\" --fix",
+        "test": "npm run eslint ; npm run stylelint"
     },
     "keywords": [],
     "author": {
@@ -20,9 +19,73 @@
         "url": ""
     },
     "license": "",
+    "repository": {
+        "type": "",
+        "url": ""
+    },
     "bugs": {
         "url": "",
         "email": ""
     },
-    "homepage": ""
+    "homepage": "",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "**/*.js": [
+            "eslint --cache --no-error-on-unmatched-pattern --ext .js,.ts,.tsx"
+        ],
+        "**/*.scss": [
+            "npx stylelint \"./src/app/**/**.scss\""
+        ]
+    },
+    "dependencies": {
+        "bootstrap": "^4.5.3",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-i18next": "^11.12.0",
+        "react-redux": "^7.2.5",
+        "react-router-dom": "^5.3.0",
+        "redux": "^4.1.1",
+        "webpack-merge": "^5.8.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/eslint-parser": "^7.15.8",
+        "@babel/plugin-proposal-class-properties": "^7.14.5",
+        "@babel/plugin-transform-runtime": "^7.15.8",
+        "@babel/preset-env": "^7.15.8",
+        "@babel/preset-react": "^7.14.5",
+        "@babel/runtime": "^7.15.4",
+        "babel-loader": "^8.2.2",
+        "copy-webpack-plugin": "^9.0.1",
+        "css-loader": "^6.3.0",
+        "file-loader": "^6.2.0",
+        "html-loader": "^2.1.2",
+        "html-webpack-plugin": "^5.3.2",
+        "husky": "^4.3.8",
+        "lint-staged": "^11.2.3",
+        "mini-css-extract-plugin": "^2.4.2",
+        "sass": "^1.42.1",
+        "sass-loader": "^12.1.0",
+        "style-loader": "^3.3.0",
+        "svg-url-loader": "^7.1.1",
+        "webpack": "^5.58.0",
+        "webpack-cli": "^4.9.0",
+        "webpack-dev-server": "^4.3.1"
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "^@component(.*)$": "<rootDir>/src/app/component$1",
+            "^@store(.*)$": "<rootDir>/src/app/store$1",
+            "^@route(.*)$": "<rootDir>/src/app/route$1",
+            "^@util(.*)$": "<rootDir>/src/app/util$1",
+            "^@style(.*)$": "<rootDir>/src/app/style$1",
+            "^@type(.*)$": "<rootDir>/src/app/type$1",
+            "^@query(.*)$": "<rootDir>/src/app/query$1"
+        }
+    }
 }

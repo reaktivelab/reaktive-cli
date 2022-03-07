@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": false,
+    "paths": {
+      "@component/*": ["./src/app/component/*"],
+      "@route/*": ["./src/app/route/*"],
+      "@store/*": ["./src/app/store/*"],
+      "@util/*": ["./src/app/util/*"],
+      "@type/*": ["./src/app/type/*"],
+      "@query/*": ["./src/app/query/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

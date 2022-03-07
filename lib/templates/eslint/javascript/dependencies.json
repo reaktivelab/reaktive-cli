@@ -1,0 +1,14 @@
+{
+  "eslint": "^7.32.0",
+  "eslint-config-airbnb": "^18.2.1",
+  "eslint-config-winniepukki-guardian": "^1.1.0",
+  "eslint-plugin-import": "^2.24.2",
+  "eslint-plugin-jsx-a11y": "^6.4.1",
+  "eslint-plugin-react": "^7.26.1",
+  "eslint-plugin-react-hooks": "^4.2.0",
+  "eslint-plugin-winniepukki-guidelines": "^2.1.2",
+  "stylelint": "^13.13.1",
+  "stylelint-config-standard": "^22.0.0",
+  "stylelint-order": "^4.1.0",
+  "stylelint-scss": "^3.21.0"
+}

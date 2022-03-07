@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
+
 import App from '@component/App/App';
 
 import './app/style/main.scss';
