@@ -2,8 +2,8 @@
 
 A powerful CLI tool to bootstrap Reaktive projects
 
-- [Getting started](https://docs.cream.camp/structure/reaktive-cli/getting-started) - learn how to bootstrap projects with the Reaktive CLI tool from the official Winniepukki Docs documentation
-- [File structure](https://docs.cream.camp/structure/reaktive-cli/file-structure) - find out about the Reaktive CLI generated projects file structure
+- [Getting started](https://docs.reaktivelab.co/structure/reaktive-cli/getting-started) - learn how to bootstrap projects with the Reaktive CLI tool from the official Winniepukki Docs documentation
+- [File structure](https://docs.reaktivelab.co/structure/reaktive-cli/file-structure) - find out about the Reaktive CLI generated projects file structure
 
 ## Table of contents
 - Requirements
